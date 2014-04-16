@@ -1,0 +1,13 @@
+VimL:" $Id: group-dox.template 417 2011-06-24 11:12:37Z luc.hermitte $
+VimL:" Doxygen local group File-Template, Luc Hermitte, 26th Jan 2011
+VimL:" hint: Doxygen local group 
+VimL: let s:value_start = '¡'
+VimL: let s:value_start = '¡'
+VimL: let s:value_end   = s:value_start
+VimL: let s:marker_open  = '<+'
+VimL: let s:marker_close = '+>'
+VimL: let s:reindent     = 1
+/**@name <+group-name+> */
+//@{
+<++>
+//@}

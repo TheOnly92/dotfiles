@@ -1,0 +1,7 @@
+VimL:" $Id: stream-extractor.template 436 2011-07-06 19:18:50Z luc.hermitte@gmail.com $
+VimL:" C++ stream-extractor (operator>>) Template, Luc Hermitte, 04th Jun 2004
+VimL:" hint: istream& operator>>(istream &, class-type)
+VimL: let s:value_start = '¡'
+VimL: let s:value_end   = s:value_start
+VimL: let s:direction   = 'i'
+VimL: call s:Include('stream-common', 'cpp/internals')

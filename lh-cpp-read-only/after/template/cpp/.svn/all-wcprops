@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp
+END
+class.template
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/class.template
+END
+traits.template
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/389/cpp/trunk/after/template/cpp/traits.template
+END
+file-dox.template
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/file-dox.template
+END
+for-iterator.template
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/414/cpp/trunk/after/template/cpp/for-iterator.template
+END
+author-doxygen.template
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/author-doxygen.template
+END
+try.template
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/414/cpp/trunk/after/template/cpp/try.template
+END
+copy-and-swap.template
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/copy-and-swap.template
+END
+catch.template
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/414/cpp/trunk/after/template/cpp/catch.template
+END
+bool-operator.template
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/330/cpp/trunk/after/template/cpp/bool-operator.template
+END
+stream-inserter.template
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/436/cpp/trunk/after/template/cpp/stream-inserter.template
+END
+group-dox.template
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/417/cpp/trunk/after/template/cpp/group-dox.template
+END
+abs-rel.template
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/abs-rel.template
+END
+enum2.template
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/435/cpp/trunk/after/template/cpp/enum2.template
+END
+utf8.template
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/41/cpp/trunk/after/template/cpp/utf8.template
+END
+for-enum.template
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/414/cpp/trunk/after/template/cpp/for-enum.template
+END
+namespace.template
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/414/cpp/trunk/after/template/cpp/namespace.template
+END
+copy-constructor.template
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/copy-constructor.template
+END
+iss.template
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/330/cpp/trunk/after/template/cpp/iss.template
+END
+fori.template
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/414/cpp/trunk/after/template/cpp/fori.template
+END
+doxygen-function.template
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/330/cpp/trunk/after/template/cpp/doxygen-function.template
+END
+assignment-operator.template
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/assignment-operator.template
+END
+singleton.template
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/458/cpp/trunk/after/template/cpp/singleton.template
+END
+throw.template
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/330/cpp/trunk/after/template/cpp/throw.template
+END
+b-e.template
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/435/cpp/trunk/after/template/cpp/b-e.template
+END
+oss.template
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/330/cpp/trunk/after/template/cpp/oss.template
+END
+enum.template
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/330/cpp/trunk/after/template/cpp/enum.template
+END
+stream-extractor.template
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/436/cpp/trunk/after/template/cpp/stream-extractor.template
+END

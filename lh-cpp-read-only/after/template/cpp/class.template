@@ -1,0 +1,56 @@
+VimL:" $Id: class.template 458 2011-08-23 17:31:59Z luc.hermitte@gmail.com $
+VimL:" C++ Class Template, Luc Hermitte
+VimL:" hint: Class Wizard (asks for class semantics)
+VimL: let s:value_start = '¡'
+VimL: let s:value_end   = '¡'
+VimL: let s:reindent = 1
+VimL: let s:marker_open  = '<+'
+VimL: let s:marker_close = '+>'
+VimL: let s:clsname = inputdialog("class name ?", Marker_Txt(expand('%:t:r')))
+VimL: call CppDox_set_brief_snippet()
+VimL: call CppDox_ClassWizard(s:clsname)
+VimL:"
+/**<+lh#dox#tag('ingroup')+> g¡lh#option#get('dox_group', '<+Group+>')¡
+ * <+g:CppDox_brief_snippet+>
+ *
+ * <+doc+>
+ *
+ * <+@invariant+>
+ *
+ * <p><b>Semantics</b><br>
+ <+g:CppDox_semantics+>
+ * <+ <li> sem+>
+ *
+ * <+lh#dox#tag('version')+> ¡'$'¡revision$
+ * <+lh#dox#author()+>>
+ */
+class ¡s:clsname¡
+¡g:CppDox_inherits¡
+{
+public:
+    /**<+lh#dox#tag('name')+> Construction/destruction
+     */
+    //<+lh#dox#tag('{')+>
+    ¡g:CppDox_constructors¡
+
+    /**
+     * ¡g:CppDox_isVirtualDest¡ Destructor.
+     *
+     ¡IF(strlen(g:CppDox_isVirtualDest), '', '* @warning this class is not meant to be publicly inherited')¡
+     * <+lh#dox#tag('throw')+> Nothing
+     */
+    ¡g:CppDox_isVirtualDest¡ ~¡s:clsname¡() ;
+    //<+lh#dox#tag('}')+>
+
+    <+Other public functions+>;
+
+    ¡IF(strlen(g:CppDox_protected_members), "protected:\n", '')¡
+    ¡g:CppDox_protected_members¡
+
+private:
+    ¡g:CppDox_forbidden_members¡
+
+    <+Private functions+>;
+
+    <+Attributes+>;
+};<++>

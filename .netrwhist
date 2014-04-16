@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/opt/local/etc/nginx'
+let g:netrw_dirhist_2='/Users/yinjunphua/.subversion/auth'
+let g:netrw_dirhist_3='/Users/yinjunphua/.subversion/auth/svn.username'
+let g:netrw_dirhist_4='/Users/yinjunphua/.oh-my-zsh'
+let g:netrw_dirhist_5='/Users/yinjunphua/develop'
+let g:netrw_dirhist_6='/Users/yinjunphua/Downloads/gitstats/doc'
+let g:netrw_dirhist_7='/Users/yinjunphua/.oh-my-zsh'
+let g:netrw_dirhist_8='/Users/yinjunphua/.oh-my-zsh/themes'
+let g:netrw_dirhist_9='/Users/yinjunphua/Develop/uniquebidswin/module/Admin/src/Admin'
