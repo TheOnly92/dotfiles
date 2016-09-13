@@ -67,15 +67,14 @@ set completeopt=longest,menuone,preview
 
 set incsearch
 
-filetype off
-filetype plugin indent off
-set runtimepath+=/usr/local/go/misc/vim
 filetype plugin indent on
 syntax on
 
 if has("gui_running")
-    set guifont=Menlo:h11
+    set guifont=Menlo\ 10
+    set guioptions-=m
+    set guioptions-=T
+    set guioptions-=r
+    set guioptions-=L
+    set lines=999 columns=999
 endif
-
-set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
-autocmd BufWritePost,FileWritePost *.go execute 'Fmt'
