@@ -40,6 +40,10 @@ set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
 set backup
 
+set autoread
+set ignorecase
+set smartcase
+
 call pathogen#infect()
 set background=dark
 colorscheme solarized
@@ -98,3 +102,29 @@ endif
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+let g:javascript_conceal_function = "ƒ"
+let g:javascript_conceal_null = "ø"
+let g:javascript_conceal_this = "@"
+let g:javascript_conceal_return = "⇚"
+let g:javascript_conceal_undefined = "¿"
+let g:javascript_conceal_arrow_function = "⇒"
+set conceallevel=1
+
+let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+let g:delimitMate_smart_quotes = 1
+let g:delimitMate_expand_inside_quotes = 0
+let g:delimitMate_smart_matchpairs = '^\%(\w\|\$\)'
+
+let g:vim_json_syntax_conceal = 0
+
+let g:multi_cursor_use_default_mapping = 0
+let g:multi_cursor_next_key = '<C-i>'
+let g:multi_cursor_prev_key = '<C-y>'
+let g:multi_cursor_quit_key = '<Esc>'
+
