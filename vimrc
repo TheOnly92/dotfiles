@@ -42,7 +42,7 @@ set backup
 
 call pathogen#infect()
 set background=dark
-colorscheme seoul256
+colorscheme solarized
 
 set statusline=%f
 set statusline+=%m
@@ -78,3 +78,23 @@ if has("gui_running")
     set guioptions-=L
     set lines=999 columns=999
 endif
+
+set clipboard=unnamed
+set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
+set grepprg=grep\ -nh
+
+nnoremap <ESC><ESC> :nohlsearch<CR>
+
+autocmd QuickFixCmdPost *grep* cwindow
+
+set list
+set listchars=tab:▸\ ,eol:¬
+set nocompatible
+
+if executable("pyenv")
+    let $PATH = system("pyenv root")[:-2]."/shims:".$PATH
+endif
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
