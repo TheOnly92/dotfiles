@@ -34,3 +34,6 @@
 [submodule "bundle/vim-markdownfmt"]
 	path = bundle/vim-markdownfmt
 	url = https://github.com/moorereason/vim-markdownfmt
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
+	url = https://github.com/terryma/vim-multiple-cursors

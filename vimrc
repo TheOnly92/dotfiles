@@ -128,3 +128,7 @@ let g:multi_cursor_next_key = '<C-i>'
 let g:multi_cursor_prev_key = '<C-y>'
 let g:multi_cursor_quit_key = '<Esc>'
 
+if exists('$TMUX')
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+endif
