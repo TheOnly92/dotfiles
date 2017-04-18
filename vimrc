@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 set encoding=utf-8
 set modelines=0
 set autoindent
@@ -44,7 +46,6 @@ set autoread
 set ignorecase
 set smartcase
 
-call pathogen#infect()
 set background=dark
 colorscheme solarized
 
@@ -70,9 +71,28 @@ noremap ' `
 set completeopt=longest,menuone,preview
 
 set incsearch
+set hlsearch
 
 filetype plugin indent on
-syntax on
+
+set nocursorcolumn
+set nocursorline
+
+syntax sync minlines=256
+set synmaxcol=300
+set re=1
+
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+
+if has('mouse')
+    set mouse=a
+endif
 
 if has("gui_running")
     set guifont=Menlo\ 10
