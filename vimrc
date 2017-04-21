@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 set encoding=utf-8
 set modelines=0
 set autoindent
@@ -44,7 +46,6 @@ set autoread
 set ignorecase
 set smartcase
 
-call pathogen#infect()
 set background=dark
 colorscheme solarized
 
@@ -70,9 +71,28 @@ noremap ' `
 set completeopt=longest,menuone,preview
 
 set incsearch
+set hlsearch
 
 filetype plugin indent on
-syntax on
+
+set nocursorcolumn
+set nocursorline
+
+syntax sync minlines=256
+set synmaxcol=300
+set re=1
+
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+
+set notimeout
+set ttimeout
+set ttimeoutlen=10
+
+if has('mouse')
+    set mouse=a
+endif
 
 if has("gui_running")
     set guifont=Menlo\ 10
@@ -109,7 +129,7 @@ let g:ctrlp_max_height = 10
 let g:ctrlp_switch_buffer = 'et'
 let g:ctrlp_max_files = 0
 let g:ctrlp_use_caching = 1
-let g:ctrlp_clear_cache_on_exit = -
+let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $HOME.'/.cache/vim-ctrlp'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
