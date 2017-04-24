@@ -78,6 +78,7 @@ filetype plugin indent on
 set nocursorcolumn
 set nocursorline
 
+syntax on
 syntax sync minlines=256
 set synmaxcol=300
 set re=1
@@ -168,3 +169,7 @@ let NERDTreeIgnore = ['\.vim$', '\~$', '\.git$', '.DS_Store']
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+let g:go_fmt_fail_silently = 0
+let g:go_fmt_command = "goimports"
+let g:go_autodetect_gopath = 1
+let g:go_term_enabled = 1
