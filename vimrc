@@ -23,6 +23,7 @@ set autowrite
 set autoread
 set title
 set dictionary=/usr/share/dict/words
+set noshowmode
 
 set backupskip=/tmp/*,/private/tmp/*
 
@@ -173,3 +174,11 @@ let g:go_fmt_fail_silently = 0
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
 let g:go_term_enabled = 1
+
+let g:airline_theme='solarized'
+
+" set to use powerline fonts when not in a ssh session
+let g:remoteSession = ($STY == "")
+if !g:remoteSession
+  let g:airline_powerline_fonts=1
+endif
