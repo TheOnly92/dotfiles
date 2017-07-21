@@ -173,3 +173,11 @@ let g:go_fmt_fail_silently = 0
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
 let g:go_term_enabled = 1
+
+au BufNewFile,BufRead *.json setlocal expandtab ts=2 sw=2 sts=2
+
+augroup filetypedetect
+    au BufNewFile,BufRead .eslintrc setf json
+augroup END
+
+let g:jsx_ext_required = 0
