@@ -92,10 +92,6 @@ set notimeout
 set ttimeout
 set ttimeoutlen=10
 
-if has('mouse')
-    set mouse=a
-endif
-
 if has("gui_running")
     set guifont=Menlo\ 10
     set guioptions-=m
@@ -107,7 +103,7 @@ endif
 
 set clipboard=unnamed
 set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
-set grepprg=grep\ -nh
+set grepprg=grep\ --exclude-dir=.git\ -n
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
@@ -120,10 +116,6 @@ set nocompatible
 if executable("pyenv")
     let $PATH = system("pyenv root")[:-2]."/shims:".$PATH
 endif
-
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
@@ -190,3 +182,10 @@ let g:remoteSession = ($STY == "")
 if !g:remoteSession
   let g:airline_powerline_fonts=1
 endif
+
+let g:jsx_ext_required = 0
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-H> <C-W><C-H>
+nnoremap <C-L> <C-W><C-L>
