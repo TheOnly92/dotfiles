@@ -17,13 +17,14 @@ set undofile
 set undoreload=10000
 set cpoptions+=J
 set shell=/bin/bash
-set lazyredraw
+" set lazyredraw
 set matchtime=3
 set autowrite
 set autoread
 set title
 set dictionary=/usr/share/dict/words
 set noshowmode
+set wildmenu
 
 set backupskip=/tmp/*,/private/tmp/*
 
@@ -76,9 +77,6 @@ set hlsearch
 
 filetype plugin indent on
 
-set nocursorcolumn
-set nocursorline
-
 syntax on
 syntax sync minlines=256
 set synmaxcol=300
@@ -106,6 +104,8 @@ set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
 set grepprg=grep\ --exclude-dir=.git\ -n
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
+nnoremap j gj
+nnoremap k gk
 
 autocmd QuickFixCmdPost *grep* cwindow
 
@@ -116,6 +116,8 @@ set nocompatible
 if executable("pyenv")
     let $PATH = system("pyenv root")[:-2]."/shims:".$PATH
 endif
+
+set wildignore+=*/BitKeeper/*
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
