@@ -40,9 +40,8 @@ set formatoptions=qrn1
 set colorcolumn=+1
 
 set undodir=~/.vim/tmp/undo//
-set backupdir=~/.vim/tmp/backup//
 set directory=~/.vim/tmp/swap//
-set backup
+set nobackup
 
 set autoread
 set ignorecase
@@ -129,13 +128,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $HOME.'/.cache/vim-ctrlp'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
-let g:javascript_conceal_function = "ƒ"
-let g:javascript_conceal_null = "ø"
-let g:javascript_conceal_this = "@"
-let g:javascript_conceal_return = "⇚"
-let g:javascript_conceal_undefined = "¿"
-let g:javascript_conceal_arrow_function = "⇒"
-set conceallevel=1
+set conceallevel=0
 
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
