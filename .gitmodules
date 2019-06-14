@@ -25,9 +25,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = vim/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
-[submodule "bundle/delimitMate"]
-	path = vim/.vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate
 [submodule "bundle/vim-javascript"]
 	path = vim/.vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript
