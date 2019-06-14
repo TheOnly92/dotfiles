@@ -43,9 +43,6 @@
 [submodule "bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/vim-scala"]
-	path = vim/.vim/bundle/vim-scala
-	url = https://github.com/derekwyatt/vim-scala.git
 [submodule "bundle/vim-yaml"]
 	path = vim/.vim/bundle/vim-yaml
 	url = https://github.com/stephpy/vim-yaml
