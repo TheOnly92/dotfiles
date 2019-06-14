@@ -1,6 +1,3 @@
-[submodule "bundle/vim-json"]
-	path = vim/.vim/bundle/vim-json
-	url = https://github.com/elzr/vim-json
 [submodule "bundle/vim-pug"]
 	path = vim/.vim/bundle/vim-pug
 	url = https://github.com/digitaltoad/vim-pug
