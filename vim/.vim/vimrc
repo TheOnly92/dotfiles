@@ -100,7 +100,7 @@ endif
 
 set clipboard=unnamed
 set grepformat=%f:%l:%m,%f:%l%m,%f\ \ %l%m,%f
-set grepprg=grep\ --exclude-dir=.git\ -n
+set grepprg=grep\ -a\ --exclude-dir=.git\ -n
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
 nnoremap j gj
