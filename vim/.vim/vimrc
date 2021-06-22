@@ -174,3 +174,8 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
 
 autocmd FileType tex :IndentLinesToggle
+autocmd FileType html setlocal textwidth=0
+autocmd FileType htmldjango setlocal textwidth=0
+
+set synmaxcol=0
+set tw=0
