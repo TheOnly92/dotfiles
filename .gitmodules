@@ -7,9 +7,6 @@
 [submodule "bundle/editorconfig-vim"]
 	path = vim/.vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
-[submodule "bundle/vim-jsx"]
-	path = vim/.vim/bundle/vim-jsx
-	url = https://github.com/mxw/vim-jsx
 [submodule "bundle/vim-python-pep8-indent"]
 	path = vim/.vim/bundle/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent
@@ -58,3 +55,9 @@
 [submodule "vim/.vim/bundle/php.vim"]
 	path = vim/.vim/bundle/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "vim/.vim/bundle/vim-lsc"]
+	path = vim/.vim/bundle/vim-lsc
+	url = https://github.com/natebosch/vim-lsc.git
+[submodule "vim/.vim/bundle/vim-polyglot"]
+	path = vim/.vim/bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
