@@ -1,36 +1,21 @@
-[submodule "bundle/vim-pug"]
-	path = vim/.vim/bundle/vim-pug
-	url = https://github.com/digitaltoad/vim-pug
-[submodule "bungle/vim-javascript"]
-	path = bungle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript
 [submodule "bundle/editorconfig-vim"]
 	path = vim/.vim/bundle/editorconfig-vim
 	url = https://github.com/editorconfig/editorconfig-vim
 [submodule "bundle/vim-python-pep8-indent"]
 	path = vim/.vim/bundle/vim-python-pep8-indent
 	url = https://github.com/Vimjas/vim-python-pep8-indent
-[submodule "bundle/indentLine"]
-	path = vim/.vim/bundle/indentLine
-	url = https://github.com/Yggdroot/indentLine
 [submodule "bundle/ctrpl.vim"]
 	path = vim/.vim/bundle/ctrpl.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/vim-colors-solarized"]
 	path = vim/.vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
-[submodule "bundle/vim-javascript"]
-	path = vim/.vim/bundle/vim-javascript
-	url = https://github.com/pangloss/vim-javascript
 [submodule "bundle/vim-markdownfmt"]
 	path = vim/.vim/bundle/vim-markdownfmt
 	url = https://github.com/moorereason/vim-markdownfmt
 [submodule "bundle/vim-multiple-cursors"]
 	path = vim/.vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
-[submodule "bundle/vim-less"]
-	path = vim/.vim/bundle/vim-less
-	url = https://github.com/groenewege/vim-less
 [submodule "bundle/vim-surround"]
 	path = vim/.vim/bundle/vim-surround
 	url = https://github.com/tpope/vim-surround
@@ -40,21 +25,12 @@
 [submodule "bundle/nerdtree"]
 	path = vim/.vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/vim-yaml"]
-	path = vim/.vim/bundle/vim-yaml
-	url = https://github.com/stephpy/vim-yaml
-[submodule "bundle/vim-go"]
-	path = vim/.vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go
 [submodule "bundle/vim-airline"]
 	path = vim/.vim/bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/vim-airline-themes"]
 	path = vim/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "vim/.vim/bundle/php.vim"]
-	path = vim/.vim/bundle/php.vim
-	url = https://github.com/StanAngeloff/php.vim.git
 [submodule "vim/.vim/bundle/vim-lsc"]
 	path = vim/.vim/bundle/vim-lsc
 	url = https://github.com/natebosch/vim-lsc.git

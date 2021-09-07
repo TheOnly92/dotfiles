@@ -147,11 +147,6 @@ let NERDTreeIgnore = ['\.vim$', '\~$', '\.git$', '.DS_Store']
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-let g:go_fmt_fail_silently = 0
-let g:go_fmt_command = "goimports"
-let g:go_autodetect_gopath = 1
-let g:go_term_enabled = 1
-
 au BufNewFile,BufRead *.json setlocal expandtab ts=2 sw=2 sts=2
 
 augroup filetypedetect
@@ -166,8 +161,6 @@ if !g:remoteSession
   let g:airline_powerline_fonts=1
 endif
 
-let g:jsx_ext_required = 0
-
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-H> <C-W><C-H>
@@ -179,3 +172,20 @@ autocmd FileType htmldjango setlocal textwidth=0
 
 set synmaxcol=0
 set tw=0
+
+let g:lsc_server_commands = {
+            \ 'python': 'pyls',
+            \ 'php': {
+            \ 'command': 'intelephense --stdio',
+            \ 'message_hooks': {
+            \ 'initialize': {
+            \ 'initializationOptions': {'storagePath': '/tmp/intelephense'},
+            \ }
+            \ }
+            \ },
+            \ 'html': 'html-languageserver --stdio'
+            \ }
+
+let g:lsc_enable_autocomplete = v:false
+
+let g:polyglot_disabled = ['typescript']
