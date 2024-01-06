@@ -2,7 +2,7 @@
 	name = TheOnly92
 	email = me@theonly92.com
 [core]
-	editor = vim
+	editor = nvim
     askpass =
 	excludesfile = /home/theonly/.gitignore_global
 [credential]
